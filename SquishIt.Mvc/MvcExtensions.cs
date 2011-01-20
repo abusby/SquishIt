@@ -9,7 +9,7 @@ namespace SquishIt.Mvc
 	{
 		public static IHtmlString RenderMvc(this ICssBundleBuilder cssBundleBuilder, string renderTo)
 		{
-			return new MvcHtmlString(cssBundleBuilder.Render(renderTo));
+			return MvcHtmlString(cssBundleBuilder.Render(renderTo));
 		}
 
 		public static IHtmlString RenderMvc(this IJavaScriptBundleBuilder javaScriptBundleBuilder, string renderTo)
